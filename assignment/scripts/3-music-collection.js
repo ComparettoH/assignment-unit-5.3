@@ -31,16 +31,18 @@ function showCollection() {
 }
 
 // console.log(showCollection())
-console.log(collection[0])
+console.log(collection[0].artist)
 
 
 function findByArtist(artist) {
     for (let i = 0; i < collection.length; i++) {
-        if (artist === collection[{artist}]) {
+        if (artist === collection[i].artist) {
             console.log('Matching albums for this artist are:', collection[i])
         }
         else {console.log('Artist not found')}
     }
 }
 
-findByArtist("Muse")
+findByArtist('Muse')
+findByArtist('Atreyu')
+findByArtist('Jon Bellion')
