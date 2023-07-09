@@ -22,17 +22,19 @@ console.log('Muse album added:', addToCollection('The 2nd Law', 'Muse', 2012))
 console.log('Jon Bellion album added:', addToCollection('The Human Condition', 'Jon Bellion', 2016))
 console.log('Jon Bellion album added:', addToCollection('Glory Sound Prep', 'Jon Bellion', 2018))
 
+console.log('Albums in my collection are:', collection)
+console.log(collection[0].artist)
+console.log(collection[5].title)
+
 function showCollection() {
     //console log # of items in collection
     console.log('Number of albums in collection are:', collection.length)
-    // for (let i = 0; i < collection.length; i++) {
-    //     console.log(collection.title[i], 'by', collection.artist[i], ', published in', collection.yearPublished[i])
-    // }
+    for (let i = 0; i < collection.length; i++) {
+        console.log(collection[i].title, 'by', collection[i].artist, ', published in', collection[i].yearPublished)
+    }
 }
 
-// console.log(showCollection())
-console.log(collection[0].artist)
-
+console.log(showCollection())
 
 function findByArtist(artist) {
     for (let i = 0; i < collection.length; i++) {
