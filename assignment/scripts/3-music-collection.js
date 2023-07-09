@@ -41,7 +41,7 @@ function findByArtist(artist) {
         if (artist === collection[i].artist) {
             console.log('Matching albums for this artist are:', collection[i])
         }
-        else {console.log('Artist not found')}
+        else { console.log('Artist not found') }
     }
 }
 
