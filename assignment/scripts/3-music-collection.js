@@ -21,3 +21,12 @@ console.log('The Used album added:', addToCollection('Lies for the Liars', 'The 
 console.log('Muse album added:', addToCollection('The 2nd Law', 'Muse', 2012))
 console.log('Jon Bellion album added:', addToCollection('The Human Condition', 'Jon Bellion', 2016))
 console.log('Jon Bellion album added:', addToCollection('Glory Sound Prep', 'Jon Bellion', 2018))
+
+function showCollection(title, artist, yearPublished){
+    for(let i=0; i<collection.length; i++){
+        //console log # of items in collection
+        console.log('Number of albums in collection are:', collection.length)
+    }
+}
+
+console.log(showCollection())
