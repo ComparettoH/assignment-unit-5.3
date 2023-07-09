@@ -22,11 +22,25 @@ console.log('Muse album added:', addToCollection('The 2nd Law', 'Muse', 2012))
 console.log('Jon Bellion album added:', addToCollection('The Human Condition', 'Jon Bellion', 2016))
 console.log('Jon Bellion album added:', addToCollection('Glory Sound Prep', 'Jon Bellion', 2018))
 
-function showCollection(title, artist, yearPublished){
-    for(let i=0; i<collection.length; i++){
-        //console log # of items in collection
-        console.log('Number of albums in collection are:', collection.length)
+function showCollection() {
+    //console log # of items in collection
+    console.log('Number of albums in collection are:', collection.length)
+    // for (let i = 0; i < collection.length; i++) {
+    //     console.log(collection.title[i], 'by', collection.artist[i], ', published in', collection.yearPublished[i])
+    // }
+}
+
+// console.log(showCollection())
+console.log(collection[0])
+
+
+function findByArtist(artist) {
+    for (let i = 0; i < collection.length; i++) {
+        if (artist === collection[{artist}]) {
+            console.log('Matching albums for this artist are:', collection[i])
+        }
+        else {console.log('Artist not found')}
     }
 }
 
-console.log(showCollection())
+findByArtist("Muse")
